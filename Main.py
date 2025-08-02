@@ -2,7 +2,7 @@ try:
     from Temporary.ImportD.data import *
     from Manager.Styles import style_terminal
     from Temporary.ImportD.KEY import ZoraaDev
-except (ImportError, ModuleError) as e: exit(e)
+except (ImportError, ValueError) as e: exit(e)
 
 class Main:
     def __init__(self) -> None:
