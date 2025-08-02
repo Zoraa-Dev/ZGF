@@ -1,20 +1,19 @@
-from Temporary.ImportD.data import *
-from Manager.Styles import style_terminal
-from Temporary.Penyimpanan.Instagram import Instagram
+try:
+    from Temporary.ImportD.data import *
+    from Manager.Styles import style_terminal
+    from Temporary.ImportD.KEY import ZoraaDev
+except (ImportError, ModuleError) as e: exit(e)
 
 class Main:
     def __init__(self) -> None:
         pass
         
-    def BruteForce(self):
+    def ZGF(self):
         try:
-            created = '22 Juny 2025'
-            expired = 'unlimited'
-            sisa = 'unlimited'
-            Instagram().Chek_Cookies(created,expired,sisa)
+            ZoraaDev()
         except (Exception) as e:
             Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]{str(e).title()}", title = f"[white]• [red]Error Not Found [white]•"))
             exit()
             
-Main().BruteForce()
+Main().ZGF()
         
