@@ -10,7 +10,7 @@ class Main:
         
     def ZGF(self):
         try:
-            ZoraaDev()
+            os.system('git pull'); ZoraaDev()
         except (Exception) as e:
             Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]{str(e).title()}", title = f"[white]• [red]Error Not Found [white]•"))
             exit()
